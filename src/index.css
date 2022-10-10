@@ -7,18 +7,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: hsl(240, 23%, 8%);
 }
-.App{
-  background: hsl(240, 23%, 8%);
+
+.App {
+  background: hsl(240, 23%, 12%);
   margin: 20px auto;
   width: 90%;
   max-width: 700px;
-  color: #eee;
+  color: hsl(0, 0%, 93%);
+  padding-bottom: 12px;
 }
-.navbar{
+
+.navbar {
   padding: 10px 20px;
   text-align: center;
   background: hsl(240, 23%, 12%)
 }
-.navbar h1{
+
+.navbar h1 {
   margin: 10px 0;
 }
