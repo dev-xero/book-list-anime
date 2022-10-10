@@ -2,13 +2,13 @@ import React, { useContext, useState } from 'react'
 import { BookContext } from '../context/BookContext'
 
 const NewBookForm = () => {
-  const { handleAddBook } = useContext(BookContext)
+  const { dispatch } = useContext(BookContext)
   const [title, setTitle] = useState('')
 	const [studio, setStudio] = useState('')
 	
 	const handleSubmit = (ev) => {
 		ev.preventDefault()
-		handleAddBook(title, studio)
+		dispatch({type: 'ADD_ANIME', book: { title, studio }})
 	}
 
   return (
