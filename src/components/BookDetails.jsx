@@ -6,7 +6,7 @@ const BookDetails = ({ book }) => {
 	const { handleRemoveBook } = useContext(BookContext)
 
 	return (
-		<li onClick={handleRemoveBook}>
+		<li onClick={() => handleRemoveBook(book.id)}>
 			<div className="title">Title: {book.title}</div>
 			<div className="author">Studio: { book.studio }</div>
 		</li>
