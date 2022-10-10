@@ -9,8 +9,8 @@ export const BookContextProvider = ({ children }) => {
     { title: 'Classroom of the Elite', studio: 'KADOKAWA', id: 2 },
   ])
 
-  const handleAddBook = (title, author) => {
-    setBooks([{ title, author, id: uuid() }, ...books])
+  const handleAddBook = (title, studio) => {
+    setBooks([{ title, studio, id: uuid() }, ...books])
   }
 
 	const handleRemoveBook = rid => {
