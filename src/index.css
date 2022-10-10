@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,41 +20,79 @@ body {
 .navbar {
   padding: 10px 20px;
   text-align: center;
-  background: hsl(240, 23%, 12%)
+  background: hsl(240, 23%, 12%);
 }
 
 .navbar h1 {
   margin: 10px 0;
 }
 
-.book-list{
+.book-list {
   margin: 20px;
 }
-.book-list ul{
+.book-list ul {
   padding: 0;
   list-style-type: none;
 }
-.book-list li{
+.book-list li {
   background: hsl(240, 23%, 18%);
   border-radius: 4px;
   padding: 12px;
   cursor: pointer;
   margin: 10px 0;
 }
-.book-list li:hover{
+.book-list li:hover {
   opacity: 0.7;
   text-decoration: line-through;
 }
-.book-list .title{
+.book-list .title {
   font-weight: bold;
   color: hsl(0, 0%, 100%);
   font-size: 1.2em;
 }
-.book-list .author{
+.book-list .author {
   font-size: 0.9em;
   color: hsl(0, 0%, 87%);
 }
-.empty{
+.empty {
   margin: 20px;
   text-align: center;
+}
+
+form {
+  padding: 4px 20px;
+}
+
+form p.title {
+  text-align: center;
+  font-weight: 700;
+  color: hsla(228, 94%, 94%, 0.479);
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  margin: 6px 0;
+  background: hsl(240, 23%, 18%);
+  color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(240, 23%, 18%);
+  outline: none;
+  border-radius: 4px;
+}
+
+input[type='text']:focus {
+  border-color: hsl(227, 100%, 63%);
+}
+
+form button {
+  margin: 10px auto;
+  background: hsl(227, 100%, 63%);
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  display: block;
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
 }

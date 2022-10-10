@@ -13,6 +13,7 @@ const NewBookForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
+      <p className="title">- ADD NEW ANIME -</p>
       <input
         type="text"
         name="anime-title"
