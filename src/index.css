@@ -27,6 +27,10 @@ body {
   margin: 10px 0;
 }
 
+.navbar h1 .colored {
+  color: hsl(222, 100%, 63%);
+}
+
 .book-list {
   margin: 20px;
 }

@@ -6,7 +6,9 @@ const NavBar = () => {
 
   return (
     <div className="navbar">
-      <h1>Anime Watch List</h1>
+      <h1>
+        <span className="colored">Anime</span> Watch List
+      </h1>
       <p>Currently you have {books.length} anime to get through</p>
     </div>
   )
